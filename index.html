@@ -31,9 +31,8 @@
 
         <section id="main-page">
             <script type="module" src="script.js"></script>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" >
+            <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" >
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -42,6 +41,7 @@
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                       <a class="nav-link" href="#">Features</a>
                       <a class="nav-link" href="#">Pricing</a>
+                      <a class="nav-link" href="#">Disabled</a>
                       <a class="nav-link" href="#">Disabled</a>
                     </div>
                   </div>
@@ -71,16 +71,17 @@
                     <!-- =========================ABOUT US================================= -->
 
         <section id="about">
-            <h5>01/About us</h5>
             <div class="box">
                 <div class="row about-row">
+                    <h5>01/About us</h5>
                     <div class="about-col-1">
                         <h2>Future is now and here we are to bring it to you</h2>
                         <p class="about-text">
                             It’s hard to run a business without an online presence these days. Everything is constantly developing with the speed of light, so keeping up to date becomes a harsh task to accomplish. 
-                            <br>
-                            That’s why we decided to ground Somnium. Our mission is to help people digitize their businesses and achieve magnificent success in the modern, online world.
                         </p>
+                        <p class="about-text">That’s why we decided to ground Somnium. Our mission is to help people digitize their businesses and achieve magnificent success in the modern, online world.
+                        </p>
+                        <button>Learn more</button>
                     </div>
                     <div class="about-col-2">
                         <img src="images/zusammen.jpg" alt="team-working">
@@ -94,19 +95,19 @@
             <h5>02/Our services</h5>
             <div class="box">
                 <div class="row services-list">
-                    <div class="services-tile">
+                    <div class="services-tile tile-web">
                         <p>01</p>
                         <h3>Web Development</h3>
                         <p>Personalized website design and creation</p>
                         <button>Learn more...</button>
                     </div>
-                    <div class="services-tile">
+                    <div class="services-tile tile-mark">
                         <p>02</p>
                         <h3>Digital Marketing</h3>
                         <p>SEO (Search Engine Optimization), Strategy & concept, content regionalizing</p>
                         <button>Learn more...</button>
                     </div>
-                    <div class="services-tile">
+                    <div class="services-tile  tile-social">
                         <p>03</p>
                         <h3>Social Media Management</h3>
                         <p>Creating and managing social media accounts on Instagram, Tiktok and Twitter</p>
@@ -143,52 +144,53 @@
 
         <!-- =================================staff============================= -->
         <section id="staff">
-            <div>
+            <div class="our-team-title-div">
                 <h1>Meet our team</h1>
             </div>
-
-            <div class="row-staff">
-                <div class="crewmate-text">
-                    <h3>JAKUB</h3>
-                    <h4>Marketing Specialist</h4>
-                    <p>Responsible for developing and implementing strategies 
-                        to promote a company's products or services. His primary goal
-                         is to increase your sales, market share and brand awareness
-                          through marketing channels. He gained his experience in various
-                          industries abroad- Marketing& IT & Sales.</p>
+            <div class="staff-grid">
+                <div class="row-staff">
+                    <div class="crewmate-text">
+                        <h3>Jakub</h3>
+                        <h4>Marketing Specialist</h4>
+                        <p>Responsible for developing and implementing strategies 
+                            to promote a company's products or services. His primary goal
+                            is to increase your sales, market share and brand awareness
+                            through marketing channels. He gained his experience in various
+                            industries abroad- Marketing& IT & Sales.</p>
+                    </div>
+                    <div class="crewmate-photo">
+                        <img src="images/jakub1.JPG" alt="marketing-specialist">
+                    </div>
                 </div>
-                <div class="crewmate-photo">
-                    <!-- <img src="images/jakub1.JPG" alt="marketing-specialist"> -->
+                <div class="row-staff">
+                    <div class="crewmate-photo">
+                        <img src="images/jakub2.JPG" alt="sales-manager">
+                    </div>
+                    <div class="crewmate-text">
+                        <h3>JAKUB</h3>
+                        <h4>Marketing Specialist</h4>
+                        <p>Responsible for developing and implementing strategies 
+                            to promote a company's products or services. His primary goal
+                            is to increase your sales, market share and brand awareness
+                            through marketing channels. He gained his experience in various
+                            industries abroad- Marketing& IT & Sales.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row-staff">
-                <div class="crewmate-photo">
-                    <!-- <img src="images/jakub2.JPG" alt="sales-manager"> -->
-                </div>
-                <div class="crewmate-text">
-                    <h3>JAKUB</h3>
-                    <h4>Marketing Specialist</h4>
-                    <p>Responsible for developing and implementing strategies 
-                        to promote a company's products or services. His primary goal
-                         is to increase your sales, market share and brand awareness
-                          through marketing channels. He gained his experience in various
-                          industries abroad- Marketing& IT & Sales.</p>
-                </div>
-            </div>
-            <div class="row-staff">
-                <div class="crewmate-text">
-                    <h3>MICHAŁ</h3>
-                    <h4>Web Designer and Developer</h4>
-                    <p>Hi.
-                        Creative& Passionate- It truly defines Michał. 
-                        Most of his skills were acquired by himself and will 
-                        probably acquire a lot more. Responsible for graphics, 
-                        3D modeling and web design. He treats life as an art, 
-                        so his work is always a masterpiece.
-                    </p>
-                </div>
-                <div class="crewmate-photo">
-                    <!-- <img src="images/michal.JPG" alt="web-developer"> -->
+                <div class="row-staff">
+                    <div class="crewmate-text">
+                        <h3>MICHAŁ</h3>
+                        <h4>Web Designer and Developer</h4>
+                        <p>Hi.
+                            Creative& Passionate- It truly defines Michał. 
+                            Most of his skills were acquired by himself and will 
+                            probably acquire a lot more. Responsible for graphics, 
+                            3D modeling and web design. He treats life as an art, 
+                            so his work is always a masterpiece.
+                        </p>
+                    </div>
+                    <div class="crewmate-photo">
+                        <img src="images/michal.JPG" alt="web-developer">
+                    </div>
                 </div>
             </div>
         </section> 
@@ -201,7 +203,7 @@
     
         <section id="contact">
             <div class="box">
-                <div class="row">
+ 
                     <div class="contact-left">                       
                     </div>
                     <div class="contact-right">
@@ -214,7 +216,7 @@
                         </form>
                         <span id="msg"></span>
                     </div>
-                </div>
+
             </div>
             <footer>
                 <div class="row">
