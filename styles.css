@@ -53,12 +53,22 @@ button {
 }
 .navbar {
     padding: 0;
+    background-color: black;
+    border-bottom: 1px solid var(--beige-light-beige-70, #fdfcf99e);
+    
 }
 .navbar-nav {
-    background-color: black;
-    flex-grow: 1;
-    justify-content: center;
-    display: flex;
+    height: 84px;
+    padding: 12px 60px;
+    align-items: center;
+    color: var(--beige-light-beige-70, #fdfcf9);
+}
+.nav-link {
+margin: 0 45px;
+}
+.logo {
+    margin-left: 25px;
+    height: 60px;
 }
 .header-text {
     display: flex;
@@ -66,7 +76,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding-top: 114px; /*?????????????? */
+    padding-top: 200px; /*?????????????? */
 }
 .header-text p {
     font-size: 25px;
@@ -119,6 +129,9 @@ height: 70vh;
     gap: 36px;
     padding: 40px;
 }
+.little-number {
+    color: var(--beige-light-beige-100, #F9F5EB);
+}
 .tile-web {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url("images/d854ab7d5ee2df1c46460a15d454bf66.jpg"), lightgray -153.437px 0.86px / 199.969% 100% no-repeat;
     background-size: cover;
@@ -141,6 +154,7 @@ height: 70vh;
 flex-direction: column;
 align-items: center;
 gap: 120px;
+padding-bottom: 143px;
 }
 .whyus-row {
     display: flex;
@@ -190,6 +204,12 @@ gap: 120px;
     flex-direction: row;
     align-items: center;
 }
+.kuba {
+    margin-top: 144px;
+}
+.michal {
+    margin-bottom: 144px;
+}
 .crewmate-text {
     display: flex;
     width: 335px;
@@ -207,21 +227,65 @@ gap: 120px;
     width: 595px;
     height: 567px; /* DO POPRAWIENIA BO SĄ ABSOLUTNE */
     flex-basis: 35%;
-    text-align: left;
     background: url("images/pawel-czerwinski-fPN1w7bIuNU-unsplash.jpg"), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .contact-right {
-    flex-basis: 50%;
+    flex: 1;
+    padding-left: 5%;
 }
 .contact-right form{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+}
+form input, form textarea{
+    background: none;
     width: 100%;
-    }
-    form input, form textarea{
-        background: none;
-        width: 100%;
-        outline: none;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 10px;
-        border: 1px solid #0079FF;
-    }
+    outline: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #0079FF;
+}
+
+
+/*FOOTER */
+
+footer {
+    background: url("images/paul-volkmer-fX-qWsXl5x8-unsplash.jpg"), lightgray -1px -275.883px / 100% 296.224% no-repeat;
+
+}
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+  }
+.footer-component {
+    flex: 1;
+    text-align: center;
+}
+.footer-links, .footer-socials, .footer-logo-component {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 36px;
+}
+.footer-logo {
+ height: 200px;
+ margin: 50px;
+}
+.footer-links a  {
+    text-decoration: none;
+    color: #ECEBEA;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: -0.216px;
+}
+.submit {
+    
+}
