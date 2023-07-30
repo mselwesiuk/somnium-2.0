@@ -42,30 +42,18 @@
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav mx-auto">
                       <a class="nav-link active" aria-current="page" href="#main-page">Home</a>
-                      <a class="nav-link" href="#">About us</a>
-                      <a class="nav-link" href="#">Services</a>
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#about">About us</a>
+                      <a class="nav-link" href="#services">Services</a>
+                      <a class="nav-link" href="#contact">Contact</a>
                     </div>
                   </div>
                 </div>
               </nav>
-            <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
-            <!-- <nav>
-                <ul id="sidemenu">
-                    <li><a href="#header">HOME</a></li>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#staff">OUR STAFF</a></li>
-                    <li><a href="#contact">CONTACT US</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars burger" onclick="openMenu()"></i>
-             </nav> -->
              <div class="header-text">
-                <p>WE ARE THE</p>
-                <h1 class="fade-in"> SOMNIUM</h1>
+                <p class="fade-in">WE ARE THE</p>
+                <h1 class="fade-in-slow"> SOMNIUM</h1>
                 <p>We will reveal your potential and monetize it.</p>
-                <button>Explore</button>
+                <button class="arrow"> <a href="#about"><i class="fa-solid fa-arrow-down-long"></i></a></button>
             </div>
         </section>
         
@@ -75,8 +63,8 @@
         <section id="about">
             <div class="box">
                 <div class="row about-row">
-                    <h5>01/About us</h5>
-                    <div class="about-col-1">
+                    <h5>01/About us</h5>     
+                    <div class="about-col-1">                   
                         <h2>Future is now and here we are to bring it to you</h2>
                         <p class="about-text">
                             It’s hard to run a business without an online presence these days. Everything is constantly developing with the speed of light, so keeping up to date becomes a harsh task to accomplish. 
@@ -94,25 +82,25 @@
 
         <!-- ====================SERVICES========================== -->
         <section id="services">
-            <h5>02/Our services</h5>
+            <h5 class="dumb-number">02/Our services</h5>
             <div class="box">
                 <div class="row services-list">
                     <div class="services-tile tile-web">
-                        <p class="little-number">01</p>
+                        <p class="services-text">01</p>
                         <h3>Web Development</h3>
-                        <p>Personalized website design and creation</p>
+                        <p class="services-text hover-text">Personalized website design and creation</p>
                         <button>Learn more...</button>
                     </div>
                     <div class="services-tile tile-mark">
-                        <p class="little-number">02</p>
+                        <p class="services-text">02</p>
                         <h3>Digital Marketing</h3>
-                        <p>SEO (Search Engine Optimization), Strategy & concept, content regionalizing</p>
+                        <p class="services-text hover-text">SEO (Search Engine Optimization), Strategy & concept, content regionalizing</p>
                         <button>Learn more...</button>
                     </div>
                     <div class="services-tile  tile-social">
-                        <p class="little-number">03</p>
+                        <p class="services-text">03</p>
                         <h3>Social Media Management</h3>
-                        <p>Creating and managing social media accounts on Instagram, Tiktok and Twitter</p>
+                        <p class="services-text hover-text">Creating and managing social media accounts on Instagram, Tiktok and Twitter</p>
                         <button>Learn more...</button>
                     </div>
                 </div>
@@ -120,7 +108,7 @@
         </section>
         <!-- ========================================WHY US========================== -->
         <section id="whyus">
-            <h5>03/Why us?</h5>
+            <h5 class="dumb-number">03/Why us?</h5>
             <div class="whyus-box">
                 <h2>Why us?</h2>
                 <div class="whyus-row">
@@ -209,11 +197,11 @@
                     <div class="contact-left">                       
                     </div>
                     <div class="contact-right">
-                        <h1>Get in touch</h1>
+                        <h1 class="intouch">Get in touch</h1>
                         <form name="submit-to-google-sheet">
-                            <input type="text" name="name" placeholder="Your Name"required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="message"  rows="6" placeholder="Your Message"></textarea>
+                            <input class="name" type="text" name="name"  placeholder="Your Name"required>
+                            <input class="email" type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message"  rows="6" size="100" placeholder="Your Message"></textarea>
                             <button type="submit" class="">Submit</button>
                         </form>
                         <span id="msg"></span>
@@ -232,7 +220,7 @@
                     <a href="#contact">Contact</a>
                   </div>
                   <div class="footer-component footer-socials">
-                    <p><i class="fa-solid fa-paper-plane"></i> sustavo@gmail.com</p>
+                    <p><i class="fa-solid fa-envelope"></i> sustavo@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i> 133929394</p>
                     <div class="social-icons">
                       <a href=""><i class="fa-brands fa-facebook"></i></a>
